@@ -1,15 +1,15 @@
 import React from "react";
-import Bank from "./app/Bank";
+import Users from "./user/app/Users";
+
 import { Provider } from "react-redux";
-import store from "./features/store";
-import Router from "./router/Router";
+import store from "./store";
+import Cake from "./cake/app/Cake";
 const App = () => {
 	return (
-		<>
-			<Provider store={store}>
-				<Router/>
-			</Provider>
-		</>
+		<Provider store={store}>
+			<Users />
+			<Cake />
+		</Provider>
 	);
 };
 
